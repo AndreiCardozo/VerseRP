@@ -1,0 +1,165 @@
+/* Header.module.css */
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+
+nav {
+    display: block;
+    padding: 35px;
+    background-color: #12161e;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.hoverEffect:hover {
+  color: #52388f;
+}
+
+.hoverEffect2:hover {
+  color: #52388f;
+}
+
+.nav_links {
+    gap: 28px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+}
+
+.nav_links a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #cdcdcd;
+    position: relative;
+    text-decoration: none;
+}
+
+.nav_buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: inherit;
+}
+
+.store_btn {
+    background-color: #7140ab;
+    padding: 10px 24px;
+    border-radius: 64px;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.cartIcon{
+    margin-right: 10px;
+}
+
+.wrapper {
+    min-height: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: 090549;
+}
+
+.fivem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: inline-block;
+}
+.zoomOutEffect {
+  transition: transform 0.3s;
+}
+
+.zoomOutEffect:hover {
+  transform: scale(1.2);
+}
+
+
+.fivem h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.fivem p {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #798095;
+}
+
+.logo {
+    max-width: 256px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.discord {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    display: inline-block;
+}
+
+.discord h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.discord p {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #798095;
+}
+
+@media (max-width: 768px) {
+    .nav_links,
+    .nav_buttons {
+        flex-direction: column;
+    }
+
+    .nav_buttons {
+        gap: 12px;
+    }
+
+    .store_btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav_links a,
+    .nav_buttons a {
+        font-size: 16px;
+    }
+
+    .store_btn {
+        padding: 6px 12px;
+    }
+
+    .fivem h1,
+    .discord h1 {
+        font-size: 20px;
+    }
+
+    .fivem p,
+    .discord p {
+        font-size: 14px;
+    }
+    
+}
+
